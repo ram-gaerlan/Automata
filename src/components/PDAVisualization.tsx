@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PDA_AB from '../assets/PDA_AB.png';
+import PDA_AB_Updated from '../assets/PDA_AB_Updated.png';
 import PDA_10 from '../assets/PDA_10.png';
 import { Maximize2 } from 'lucide-react';
 import FullscreenVisualization from './FullscreenVisualization';
@@ -28,7 +28,7 @@ const PDAVisualization: React.FC<PDAVisualizationProps> = ({ selectedRegex }) =>
         {/* Preview image */}
         <div className="w-full h-full flex items-start justify-center">
           <img
-            src={selectedRegex === 0 ? PDA_AB : PDA_10}
+            src={selectedRegex === 0 ? PDA_AB_Updated : PDA_10}
             alt={`PDA for Regex ${selectedRegex + 1}`}
             className="max-w-none"
             style={{
@@ -55,7 +55,7 @@ const PDAVisualization: React.FC<PDAVisualizationProps> = ({ selectedRegex }) =>
         title={`PDA for Regex ${selectedRegex + 1}`}
       >
         <img
-          src={selectedRegex === 0 ? PDA_AB : PDA_10}
+          src={selectedRegex === 0 ? PDA_AB_Updated : PDA_10}
           alt={`PDA for Regex ${selectedRegex + 1}`}
           className="max-w-none"
           style={{
